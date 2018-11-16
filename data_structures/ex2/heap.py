@@ -1,5 +1,15 @@
-def heapsort(arr):
- pass 
+def heapsort(mylist):
+ head = Heap()
+ queue = []
+
+ for i in mylist:
+  head.insert(i)
+
+ for i in mylist:
+  queue.insert(0, head.delete())
+ return queue
+
+ 
  
 
 class Heap:
